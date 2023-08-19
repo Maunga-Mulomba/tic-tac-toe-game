@@ -1,0 +1,70 @@
+/* Your code here */
+
+/* Your code here */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+#status-msg {
+  font-family: "Cabin", sans-serif;
+  font-size: 3rem;
+}
+
+#board {
+  display: grid;
+  grid-template-columns: repeat(3, 90px);
+}
+
+/* cells */
+
+.cell {
+  font-family: "Varela Round", sans-serif;
+  width: 90px;
+  height: 90px;
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 85px;
+}
+
+#square-0,
+#square-1,
+#square-2 {
+  border-top: none;
+}
+
+#square-0,
+#square-3,
+#square-6 {
+  border-left: none;
+}
+
+#square-2,
+#square-5,
+#square-8 {
+  border-right: none;
+}
+
+#square-6,
+#square-7,
+#square-8 {
+  border-bottom: none;
+}
+
+/* buttons */
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 270px;
+}
+
+.buttons button {
+  padding: 0.5rem 1.2rem;
+  font-family: "Cabin", sans-serif;
+  cursor: pointer;
+}
